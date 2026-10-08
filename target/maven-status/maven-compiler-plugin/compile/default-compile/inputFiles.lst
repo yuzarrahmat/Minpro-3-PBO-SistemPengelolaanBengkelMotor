@@ -1,5 +1,8 @@
-C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\BengkelSystem.java
-C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\LayananServis.java
-C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\PerbaikanBerat.java
-C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\ServisRutin.java
-C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\ServisRutinGantiOli.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\com\mycompany\bengkelsystem\main\Main.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\Controller\BengkelController.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\Model\LayananServis.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\Model\PerbaikanBerat.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\Model\ServisRutin.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\Service\LayananBengkel.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\util\InputValidator.java
+C:\Users\Acer\OneDrive\Documents\NetBeansProjects\BengkelSystem\src\main\java\view\BengkelView.java

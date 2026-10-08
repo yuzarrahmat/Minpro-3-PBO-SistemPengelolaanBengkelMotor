@@ -1,5 +1,8 @@
-com\mycompany\bengkelsystem\main\LayananServis.class
-com\mycompany\bengkelsystem\main\ServisRutin.class
-com\mycompany\bengkelsystem\main\BengkelSystem.class
-com\mycompany\bengkelsystem\main\PerbaikanBerat.class
-com\mycompany\bengkelsystem\main\ServisRutinGantiOli.class
+model\PerbaikanBerat.class
+model\ServisRutin.class
+util\InputValidator.class
+view\BengkelView.class
+com\mycompany\bengkelsystem\main\Main.class
+model\LayananServis.class
+controller\BengkelController.class
+service\LayananBengkel.class
