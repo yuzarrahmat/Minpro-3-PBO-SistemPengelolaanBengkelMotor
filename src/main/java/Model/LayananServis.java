@@ -22,7 +22,7 @@ public abstract class LayananServis implements LayananBengkel {
 
     public void setBiayaJasa(double biayaJasa) {
         if (biayaJasa < 0) {
-            throw new IllegalArgumentException("Biaya jasa tidak boleh bernilai negatif.");
+            throw new IllegalArgumentException("Biaya jasa ga boleh negatif.");
         }
         this.biayaJasa = biayaJasa;
     }

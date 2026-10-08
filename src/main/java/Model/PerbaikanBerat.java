@@ -7,7 +7,7 @@ public class PerbaikanBerat extends LayananServis {
     public PerbaikanBerat(String kodeServis, String platNomor, String namaPelanggan, double biayaJasa, String namaSparepart, double hargaSparepart) {
         super(kodeServis, platNomor, namaPelanggan, biayaJasa);
         if (hargaSparepart < 0) {
-            throw new IllegalArgumentException("Harga sparepart tidak boleh negatif.");
+            throw new IllegalArgumentException("Harga sparepart ga boleh negatif.");
         }
         this.namaSparepart = namaSparepart;
         this.hargaSparepart = hargaSparepart;

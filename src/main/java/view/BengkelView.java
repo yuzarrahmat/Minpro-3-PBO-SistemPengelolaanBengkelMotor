@@ -18,15 +18,15 @@ public class BengkelView {
     public void start() {
         boolean running = true;
         while (running) {
-            System.out.println("\n==================================================");
-            System.out.println("   SISTEM PENGELOLAAN BENGKEL MOTOR (MINPRO 3)   ");
-            System.out.println("==================================================");
-            System.out.println("1. Tampilkan Daftar Antrean Servis");
+            System.out.println("\n======================================");
+            System.out.println("   SISTEM PENGELOLAAN BENGKEL MOTORRR   ");
+            System.out.println("========================================");
+            System.out.println("1. Daftar Antrean Servis");
             System.out.println("2. Catat Servis Rutin / Ganti Oli");
             System.out.println("3. Catat Perbaikan Berat");
             System.out.println("4. Update Biaya Jasa Servis");
             System.out.println("5. Selesaikan Servis & Cetak Struk");
-            System.out.println("6. Keluar Aplikasi");
+            System.out.println("6. Keluar");
 
             int pilihan = InputValidator.readIntRange("Pilih Menu [1-6]: ", 1, 6);
 
@@ -37,7 +37,7 @@ public class BengkelView {
                 case 4 -> updateBiayaJasa();
                 case 5 -> prosesSelesai();
                 case 6 -> {
-                    System.out.println("\n[INFO] Terima kasih telah menggunakan Sistem Pengelolaan Bengkel Motor!");
+                    System.out.println("\nTerima kasih!");
                     running = false;
                 }
             }
@@ -48,7 +48,7 @@ public class BengkelView {
         System.out.println("\n--- DAFTAR ANTREAN SERVIS ---");
         List<LayananServis> list = controller.getAllAntrean();
         if (list.isEmpty()) {
-            System.out.println("[INFO] Tidak ada antrean servis saat ini.");
+            System.out.println("Tidak ada antrean servis saat ini.");
             return;
         }
 
@@ -73,7 +73,7 @@ public class BengkelView {
 
         ServisRutin servis = new ServisRutin(kode, plat, nama, jasa, oli, hargaOli);
         controller.tambahServis(servis, "Pengecekan rutin dan pergantian oli " + oli + " dicatat.");
-        System.out.println("[SUCCESS] Servis Rutin berhasil dicatat dengan Kode: " + kode);
+        System.out.println("Servis Rutin berhasil dicatat! Kode: " + kode);
     }
 
     private void tambahPerbaikanBerat() {
@@ -87,21 +87,21 @@ public class BengkelView {
 
         PerbaikanBerat perbaikan = new PerbaikanBerat(kode, plat, nama, jasa, sparepart, hargaSparepart);
         controller.tambahServis(perbaikan);
-        System.out.println("[SUCCESS] Perbaikan Berat berhasil dicatat dengan Kode: " + kode);
+        System.out.println("Perbaikan Berat berhasil dicatat! Kode: " + kode);
     }
 
     private void updateBiayaJasa() {
         System.out.println("\n--- UPDATE BIAYA JASA ---");
-        String kode = InputValidator.readNonEmptyString("Masukkan Kode Servis (contoh: SRV-001): ");
+        String kode = InputValidator.readNonEmptyString("Masukkan Kode Servis : ");
         LayananServis s = controller.cariByKode(kode);
         if (s == null) {
-            System.out.println("[ERROR] Kode servis tidak ditemukan!");
+            System.out.println("Kode servis gaada!");
             return;
         }
 
         double jasaBaru = InputValidator.readNonNegativeDouble("Masukkan Biaya Jasa Baru (Rp): ");
         controller.updateBiayaJasa(kode, jasaBaru);
-        System.out.println("[SUCCESS] Biaya jasa untuk " + kode + " berhasil diperbarui menjadi Rp " + jasaBaru);
+        System.out.println("Biaya jasa untuk " + kode + " berhasil diperbarui menjadi Rp " + jasaBaru);
     }
 
     private void prosesSelesai() {
@@ -122,9 +122,9 @@ public class BengkelView {
             System.out.println("=====================================================");
 
             controller.selesaikanServis(kode);
-            System.out.println("[INFO] Servis telah selesai dan data berhasil dihapus dari antrean.");
+            System.out.println("Servis telah selesai dan data berhasil dihapus dari antrean.");
         } else {
-            System.out.println("[ERROR] Kode servis tidak ditemukan!");
+            System.out.println("Kode servis gaada!");
         }
     }
 }

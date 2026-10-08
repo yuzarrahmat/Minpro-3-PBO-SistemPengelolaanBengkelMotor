@@ -7,7 +7,7 @@ public class ServisRutin extends LayananServis {
     public ServisRutin(String kodeServis, String platNomor, String namaPelanggan, double biayaJasa, String merkOli, double hargaOli) {
         super(kodeServis, platNomor, namaPelanggan, biayaJasa);
         if (hargaOli < 0) {
-            throw new IllegalArgumentException("Harga oli tidak boleh negatif.");
+            throw new IllegalArgumentException("Harga oli ga boleh negatif.");
         }
         this.merkOli = merkOli;
         this.hargaOli = hargaOli;

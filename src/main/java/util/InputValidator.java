@@ -12,7 +12,7 @@ public class InputValidator {
             if (!input.isEmpty()) {
                 return input;
             }
-            System.out.println("[ERROR] Input tidak boleh kosong! Coba lagi.");
+            System.out.println("Input ga boleh kosong! Coba lagi.");
         }
     }
 
@@ -25,9 +25,9 @@ public class InputValidator {
                 if (value >= 0) {
                     return value;
                 }
-                System.out.println("[ERROR] Nilai tidak boleh negatif!");
+                System.out.println("Nilai ga boleh negatif!");
             } catch (NumberFormatException e) {
-                System.out.println("[ERROR] Input harus berupa angka valid!");
+                System.out.println("Input harus angka yg valid!");
             }
         }
     }
@@ -41,9 +41,9 @@ public class InputValidator {
                 if (value >= min && value <= max) {
                     return value;
                 }
-                System.out.println("[ERROR] Pilih angka antara " + min + " sampai " + max + "!");
+                System.out.println("Pilih angka antara " + min + " sampai " + max + "!");
             } catch (NumberFormatException e) {
-                System.out.println("[ERROR] Input harus berupa angka bulat!");
+                System.out.println("Input harus angka bulat!");
             }
         }
     }
